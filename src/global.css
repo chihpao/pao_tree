@@ -1,0 +1,55 @@
+/* src/global.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  li {
+    margin: 15px 0;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    padding: 12px;
+    border: 1px solid #3498db;
+    border-radius: 12px; /* 增加圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影 */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  
+  a:hover {
+    background-color: #3498db;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加懸停時的陰影 */
+  }
+  
+  /* 響應式設計 */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
