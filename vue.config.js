@@ -20,4 +20,7 @@ module.exports = defineConfig({
       title: 'paotree', // 設置您的網站標題
     },
   },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/pao_tree/'
+    : '/'
 });
