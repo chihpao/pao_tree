@@ -24,7 +24,17 @@ export default {
           icon: require("./assets/stupidcat_icon.png"),
         },
         {
-          name: "GitHub",
+          name: "學習筆記分享",
+          url: "https://chihpao.notion.site/",
+          icon: require("./assets/notion_icon.png"),
+        },
+        {
+          name: "在咖啡廳轉生成為冰美",
+          url: "https://open.spotify.com/show/2gMSpNkgeKlE2Nyu8Ru4gw",
+          icon: require("./assets/spotify_icon.png"),
+        },
+        {
+          name: "Pao GitHub",
           url: "https://github.com/chihpao",
           icon: require("./assets/github_icon.png"),
         },
@@ -37,11 +47,6 @@ export default {
           name: "Facebook",
           url: "https://www.facebook.com/chihpaoo",
           icon: require("./assets/facebook_icon.png"),
-        },
-        {
-          name: "Notion",
-          url: "https://chihpao.notion.site/",
-          icon: require("./assets/notion_icon.png"),
         },
         // 添加更多連結
       ],

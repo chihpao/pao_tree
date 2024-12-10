@@ -6,18 +6,23 @@
   justify-content: center; /* 置中內容 */
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #f0f4f8; /* 更柔和的背景顏色 */
   min-height: 100vh;
 }
 
 header {
   margin-bottom: 20px; /* 增加底部間距 */
-  padding: 20px; /* 增加內邊距 */
+  padding: 40px; /* 增加內邊距 */
   background-color: #ffffff; /* 添加背景顏色 */
   border-radius: 12px; /* 添加圓角 */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 添加陰影 */
   text-align: center; /* 文字居中 */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加過渡效果 */
+  width: 90%; /* 設置寬度 */
+  max-width: 1200px; /* 設置最大寬度 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 置中內容 */
 }
 
 header:hover {
@@ -28,7 +33,7 @@ header:hover {
 h1 {
   margin: 0; /* 移除標題的默認間距 */
   margin-bottom: 10px; /* 增加標題和描述之間的間距 */
-  font-size: 28px; /* 調整字體大小 */
+  font-size: 32px; /* 調整字體大小 */
   color: #333; /* 調整字體顏色 */
   font-weight: bold; /* 加粗字體 */
 }
@@ -42,7 +47,7 @@ p {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto; /* 置中列表 */
+  margin: 0 ; /* 置中列表 */
   width: 100%;
   max-width: 400px; /* 設置最大寬度 */
   display: flex;
@@ -52,7 +57,7 @@ ul {
 
 li {
   margin: 10px 0;
-  width: 100%; /* 使列表項目寬度與父元素一致 */
+  width: 80%; /* 設置寬度 */
 }
 
 a {
@@ -60,22 +65,27 @@ a {
   align-items: center;
   justify-content: center; /* 使文字置中 */
   text-decoration: none;
-  color: #2c3e50;
+  color: #000000;
   font-size: 18px;
   padding: 12px;
-  border: 1px solid #ecf0f1;
-  border-radius: 12px; /* 增加圓角 */
-  background-color: #ecf0f1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 增加陰影 */
+  border: 2px solid #000000;
+  background-color: hsl(194, 61%, 76%);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.8), /* 第一層陰影 */
+    0 0 0 4px hsl(194, 61%, 76%), /* 第二層陰影，模擬內邊框 */
+    0 0 0 6px #000000; /* 第三層陰影，模擬外邊框 */
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
   width: 100%; /* 設定寬度為100% */
   max-width: 300px; /* 設定最大寬度 */
+  text-transform: uppercase; /* 全部大寫 */
+  letter-spacing: 1px; /* 增加字母間距 */
+  border-radius: 0; /* 移除圓角 */
 }
 
 a:hover {
-  background-color: #ff9900;
-  color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增加懸停時的陰影 */
+  background-color: #3af196d2; /* 懸停時的背景顏色 */
+  color: #000000; /* 懸停時的文字顏色 */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* 增加懸停時的陰影 */
   transform: translateY(-5px); /* 增加立體感 */
 }
 
